@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        h1 {
+            margin: 0;
+        }
+
+        .products-container {
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; */
+        }
+
+        .product {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .product img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+        nav {
+         background-color: #333;
+         color: white;
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      nav ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      nav ul li {
+         display: inline;
+         margin-right: 20px;
+      }
+
+      nav a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2em;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our decoration catalog</h1>
+        <nav>
+            <ul>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="cart.html">Корзина</a></li>
+   
+            </ul>
+         </nav>
+    </header>
+
+    <div class="row">
+        <div class="medium-12 columns">
+            <div class="products-container">
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/74/b7/3a/74b73ab86a290daffce3ac77a5da5cf0.jpg" alt="Товар 1">
+                    <h3>Ожерелье из минералов аметист</h3>
+                    <p>Цена: $10.99</p>
+                    <button class="button add-to-cart" data-name="Ожерелье из минералов аметист" data-price="10.99">Добавить в
+                        корзину</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/9d/65/af/9d65af5bd83b697db63e279ab6af4a34.jpg" alt="Товар 2">
+                    <h3>Украшение из черных бисеров</h3>
+                    <p>Цена: $10.99</p>
+                    <button class="button add-to-cart" data-name="Украшение из черных бисеров" data-price="10.99">Добавить в
+                        корзину</button>
+                </div>
+
+
+
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/92/95/6f/92956ffe536485722f1c72353f751853.jpg" alt="Товар 3">
+                    <h3>Комплект soft blue</h3>
+                    <p>Цена: $19.99</p>
+                    <button class="button add-to-cart" data-name="Комплект soft blue" data-price="21.99">Добавить в
+                        корзину</button>
+                </div>
+
+
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/4e/1d/0a/4e1d0a53fd13938c1231861500632a8d.jpg"  alt="Товар 4">
+                    <h3>Чокер с бабочками</h3>
+                    <p>Цена: $25.99</p>
+                    <button class="button add-to-cart" data-name="Чокер с бабочками" data-price="25.99">Добавить в
+                        корзину</button>
+                </div>
+
+
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/48/cb/96/48cb96df7e38a6250498ad88a451f567.jpg" alt="Товар 5">
+                    <h3>Кулон из минералов</h3>
+                    <p>Цена: $19.99</p>
+                    <button class="button add-to-cart" data-name="Кулон из минералов" data-price="19.99">Добавить в
+                        корзину</button>
+                </div>
+
+
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/18/a8/90/18a89015b6850541bddbc0fbf5911660.jpg" alt="Товар 6">
+                    <h3>Чокер из перламутра</h3>
+                    <p>Цена: $19.99</p>
+                    <button class="button add-to-cart" data-name="Чокер из перламутра" data-price="19.99">Добавить в
+                        корзину</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <!-- Подвал здесь -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/vendor/what-input.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

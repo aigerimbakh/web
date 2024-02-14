@@ -1,0 +1,289 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Главная страница</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+   <link rel="stylesheet" href="styles.css">
+   <style>
+      /* Дополнительные стили для главной страницы */
+      header {
+         background-color: #333;
+         color: white;
+         padding: 20px 0;
+         text-align: center;
+      }
+
+      h1 {
+         margin: 0;
+         font-size: 2.5em;
+      }
+
+      .hero {
+         background-image: url('https://i.pinimg.com/originals/3a/ee/19/3aee19ef36c19199dc8ae79c9606ca16.jpg');
+         
+         background-size: cover;
+         background-position: center;
+         color: rgb(0, 0, 0);
+         text-align: left;
+         padding: 120px 110px ;
+      }
+
+      .hero h1 {
+         font-size: 5em;
+         font-weight: bolder;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         margin: 0;
+      }
+
+      .hero p {
+         font-size: 1.5em;
+         margin-top: 15px;
+         margin-right: 450px;
+         font-weight: 100;
+         font-family:Arial, Helvetica, sans-serif;
+      }
+
+      .cta-button {
+         background-color: #0a0b0b;
+         color: white;
+         border: none;
+         padding: 15px 30px;
+         font-size: 16px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         text-decoration: none;
+         border-style: solid;
+         border-color: #0a0b0b;
+
+
+      }
+      .cta-button2{
+         background-color: #e6e6e6;
+         color:rgb(5, 5, 5);
+         border: none;
+         padding: 15px 30px;
+         font-size: 16px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         text-decoration: none;
+         border-style: solid;
+         border-color: #0a0b0b;
+
+
+      }
+
+      .cta-button:hover {
+         background-color: #0056b3;
+      }
+
+      
+      nav {
+         background-color: #333;
+         color: white;
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      nav ul {
+         list-style: none;
+         padding: 0;
+        text-align: right;
+        justify-content: left;
+        word-spacing: 20px;
+      }
+   
+      nav ul li {
+         display: inline;
+         margin-right: 40px;
+      }
+
+      nav a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2em;
+      }
+
+ 
+      footer {
+         background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 20px 0;
+      }
+      .tero {
+         background-color: #f8f8f8;
+      }
+      .tero h1 {
+         text-align: center;
+         font-size: 35px;
+         font-weight: bolder;
+         font-family:Arial, Helvetica, sans-serif;
+         margin: 15px;
+         background-color: #e6e6e6;
+      }
+      .rero{
+         background-color: #dbd9d9;
+      }
+      .rero h1 {
+         margin-top: 65px;
+         text-align: center;
+         font-size: 35px;
+         font-weight: bolder;
+         font-family:Arial, Helvetica, sans-serif;
+         margin: 15px;
+         background-color: #dbd9d9;
+      }
+     
+     .rero h3{
+      text-align: left;
+      margin-left: 150px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+
+
+.container {
+
+display: flex;
+justify-content: space-between;
+padding: 70px 150px;
+
+}
+
+.center {
+
+text-align: center;
+
+}
+.socials a {
+
+text-decoration:solid;
+
+color: rgb(21, 20, 20);
+
+}
+.socials div:hover a {
+
+color: rgb(240, 77, 52);
+
+}
+.socials h3{
+   text-align: center;
+   font-weight: 600;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+         
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+
+         </ul>
+      </nav>
+      
+   </header>
+
+   <div class="hero">
+   <h1>Welcome!</h1>
+      <p>Мы рады приветствовать тебя на нашем сайте!
+          Если у тебя возникли трудности то подавай заявку, наши специалисты помогут решить твою проблему.</p>
+          <button>
+      <a href="catalog.html" class="button expanded cta-button ">LEARN MORE</a>
+   </button>
+   <button>
+      <a href="catalog.html" class="button expanded cta-button2">CONTACT US</a>
+   </button>
+   </div>
+
+
+   <div class="tero">
+      <h1>Как получить консультацию</h1>
+   </div>
+
+      <div class="services">
+
+         <div class="container center socials">
+ 
+             <div class="hh">
+ 
+                 <a href="#">
+                     <h3>1 Шаг</h3>
+                     <p>Зарегистрируйтесь на нашем сайте, создав аккаунт.</p>
+ 
+                 </a>
+ 
+             </div>
+ 
+             <div class="hh">
+ 
+                 <a href="#">
+                     <h3>2 Шаг</h3>
+                     <p>Выберите категорию специалистов с которыми хотели проконсультироваться,
+                         и ознакомьтесь с их профилями</p>
+ 
+                 </a>
+ 
+             </div>
+ 
+             <div class="hh">
+ 
+                 <a href="#">
+                     <h3>3 Шаг</h3>
+                     <p>Запланируйте консультацию, обсудив удобное время и цену. </p>
+ 
+                 </a>
+ 
+             </div>
+ 
+         </div>
+     </div>
+     <div class="rero">
+      <br>
+      <h1>Наши специальности</h1>
+      <h3>
+      01  Медицина
+      </h3>
+      <hr>
+      <h3>
+      02   Юрисприденция
+      </h3>  <hr>
+      <h3>
+      03   Косметолог
+      </h3>  <hr>
+      <h3>
+      04   Айти
+      </h3>   <hr>
+      <h3>
+      05  Финансы
+      </h3>   <hr>
+      <h3>
+      06   Психолог
+      </h3>
+      
+
+     </div>
+   
+  
+   <footer>
+      <p>&copy; 2023 Candy Silver</p>
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/vendor/what-input.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>

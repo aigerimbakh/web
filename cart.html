@@ -1,0 +1,107 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина покупок</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .cart {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .cart h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .cart-item img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .cart-item p {
+            margin: 0;
+        }
+
+        .cart-total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .cart-total strong {
+            font-size: 1.2em;
+        }
+
+        .checkout-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Корзина покупок</h1>
+        
+    </header>
+
+    <div class="row">
+        <div class="medium-12 columns">
+            <div class="cart">
+                <h2>Содержимое корзины</h2>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong>Итого: <span id="total-price">$0.00</span></strong>
+                    
+                </div>
+                <a href="checkout.html" class="button expanded checkout-button">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/vendor/what-input.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

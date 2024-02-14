@@ -1,0 +1,123 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Главная страница</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+   <link rel="stylesheet" href="styles.css">
+   <style>
+      /* Дополнительные стили для главной страницы */
+      header {
+         background-color: #333;
+         color: white;
+         padding: 20px 0;
+         text-align: center;
+      }
+
+      h1 {
+         margin: 0;
+         font-size: 2.5em;
+      }
+
+      .hero {
+         background-image: url('https://i.pinimg.com/originals/3a/ee/19/3aee19ef36c19199dc8ae79c9606ca16.jpg');
+         
+         background-size: cover;
+         background-position: center;
+         color: white;
+         text-align: center;
+         padding: 150px 0;
+      }
+
+      .hero h2 {
+         font-size: 3em;
+         margin: 0;
+      }
+
+      .hero p {
+         font-size: 1.5em;
+         margin-top: 20px;
+      }
+
+      .cta-button {
+         background-color: #606d7a;
+         color: white;
+         border: none;
+         padding: 15px 30px;
+         font-size: 1.2em;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         text-decoration: none;
+      }
+
+      .cta-button:hover {
+         background-color: #0056b3;
+      }
+
+      
+      nav {
+         background-color: #333;
+         color: white;
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      nav ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      nav ul li {
+         display: inline;
+         margin-right: 20px;
+      }
+
+      nav a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2em;
+      }
+
+ 
+      footer {
+         background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 20px 0;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Добро пожаловать в наш онлайн магазин Candy Silver </h1>
+      <nav>
+         <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+
+         </ul>
+      </nav>
+   </header>
+
+   <div class="hero">
+      <h2>The best decoration for you</h2>
+      <p>Найдите идеальное украшение по выгодной цене.</p>
+      <a href="catalog.html" class="button expanded cta-button">Посмотреть каталог</a>
+   </div>
+
+   <footer>
+      <p>&copy; 2023 Candy Silver</p>
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/vendor/what-input.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>
